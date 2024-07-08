@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{ partial "head.html" . }}
+
+<body>
+  <header>
+    <a href="/" class="logo">记事本</a>
+    <nav>
+      {{ range .Site.Params.socials }}
+      <a href="{{ .link }}">{{ .name }}</a>
+      {{ end }}
+    </nav>
+  </header>
